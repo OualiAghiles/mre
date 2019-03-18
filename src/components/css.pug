@@ -1,0 +1,56 @@
+section
+  h2 Donnant un peu de couleurs a notre code
+  ul.build.build-items
+    li Ajouter des style géneraux 
+    li Ajout style de la topbar
+    li Ajout style de la section hero
+    li Ajout style de la section colunnes
+section
+  h2 Structure html de Base
+  pre
+      code(class=' language-css').
+        *{
+          box-sizing: border-box;
+        }
+        *::after{
+          clear: both;
+          content: "";
+          display: table;
+        }
+        body{
+          margin: 0;
+          padding: 0;
+          font-faminy: sans-serif;
+          font-size: 16px
+        }
+section
+  h2 Ajout style de la topbar
+  pre
+    code(class=' language-css').
+      .topbar{
+        width: 100%;
+        background-color: #343a40;
+        padding: 0;
+        margin: 0; 
+        clear:both;
+      }
+      .logo{
+        margin: 5px 0 5px 0;
+      }
+      .logo img {
+        height: 50px;
+        width: auto;
+      }
+      .menu {
+        float: right;
+        margin: 5px 0;
+        width: 21px;
+        border: 1px solid #fff;
+      }
+      .menu .dropdown span{
+        width: 15px;
+        height: 2px;
+        display: inline-block;
+        background: "#fff";
+        margin: 3px;
+      }

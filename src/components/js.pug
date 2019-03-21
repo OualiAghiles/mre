@@ -1,3 +1,58 @@
 section
   h2 Javascript
   ul.build.build-items
+    li Introduction 
+    li Les variable
+    li Les boucles
+    li Les fonctions
+    li Premiere ligne de code 
+    li Exemple concret
+    li Ajout d'un dropdown au menu
+    li Ajout d'un carousel dans la page web
+section
+  h2 Introduction
+  h4 Bref rappel de sur le javascript
+  pre
+    code.language-javascript.
+      function dropdown(selector) {
+        var btn = document.querySelector(selector)
+        btn.addEventListener('click', function (e) {
+          e.preventDefault()
+          /* .... */
+        })
+      }
+      dropdown('.menu')
+section
+  h2 Les Variables
+  pre
+    code.language-javascript.
+      var maVariable;
+      console.log(maVariable);
+      
+      maVariable = 10;
+      console.log(maVariable);
+      
+      maVariable = [];
+      console.log(maVariable);
+section
+  h2 Les boucles(Boucle for)
+  pre
+    code.language-javascript.
+      function count(num) {
+        for(var i=0; i&lt;num ; i++){
+          console.log('valeur de I:', i)
+        }
+      }
+      count(10)
+section
+  h2 Les boucles (While)
+  pre
+    code.language-javascript.
+      function count(num) {
+        var i = 0;
+        while( i&lt;num ){
+          console.log('valeur de I:', i)
+          i+= 1
+        }
+      }
+      count(10)
